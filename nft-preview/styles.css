@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+body {
+  font-family: 'Outfit', sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: #0d192b;
+  height: 100vh;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container {
+  width: 21%;
+  padding: 20px;
+  border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #14253d;
+}
+
+.card-container .card-image {
+  position: relative;
+}
+
+.card-container .card-image .main-img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.card-container .card-image .view-img {
+  opacity: 0;
+}
+
+.card-container .card-image .view-img-svg {
+  display: none;
+  opacity: 0;
+}
+
+.card-container .card-image:hover {
+  cursor: pointer;
+}
+
+.card-container .card-image:hover .view-img {
+  width: 100%;
+  height: calc(100%  - 4px);
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  background-color: #00fff7;
+  border-radius: 5px;
+  opacity: 0.6;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-container .card-image:hover .view-img-svg {
+  opacity: 1;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card-container .card-body .card-text .nft-name {
+  font-weight: 600;
+}
+
+.card-container .card-body .card-text .nft-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+.card-container .card-body .card-text .nft-desc {
+  color: #8bacda;
+  font-weight: 300;
+}
+
+.card-container .card-body .nft-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card-body .nft-details .nft-icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card-container .card-body .nft-details .nft-icon-container .nft-icon {
+  margin-right: 0.3rem;
+}
+
+.card-container .card-body .nft-details .nft-icon-container .nft-worth {
+  color: #00fff7;
+}
+
+.card-container .card-body .nft-details .nft-validity {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-container .card-body .nft-details .nft-validity img {
+  margin-right: 0.3rem;
+}
+
+.card-container .card-body .nft-details .nft-validity .days-left {
+  font-weight: 300;
+}
+
+.card-container .card-body .card-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: baseline;
+      -ms-flex-pack: baseline;
+          justify-content: baseline;
+  padding: 15px 0px;
+  margin-top: 15px;
+  border-top: 1px solid #2f415b;
+}
+
+.card-container .card-body .card-user .user-avatar {
+  padding-right: 15px;
+}
+
+.card-container .card-body .card-user .user-avatar img {
+  width: 30px;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+.card-container .card-body .card-user .user-detail {
+  padding: 5px 0px;
+}
+
+.card-container .card-body .card-user .user-detail .creation-of {
+  font-weight: 300;
+}
+
+.card-container .card-body .card-user .user-detail .user-name {
+  font-weight: 300;
+}
+
+.card-container .card-body .card-user .user-detail .user-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
